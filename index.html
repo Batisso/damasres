@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 
-<html data-wf-domain="damasrestaurant.com" data-wf-page="677bbe3f761bd2b2bc7bee14" data-wf-site="677bbe3f761bd2b2bc7bedd7"
+<html data-wf-domain="dabuscoffee.com" data-wf-page="677bbe3f761bd2b2bc7bee14" data-wf-site="677bbe3f761bd2b2bc7bedd7"
   lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title>Menu - Damas Restaurant</title>
-  <meta content="Menu - Damas Restaurant" property="og:title">
-  <meta content="Menu - Damas Restaurant" property="twitter:title">
+  <title>Menu - Dabus Coffee</title>
+  <meta content="Menu - Dabus Coffee" property="og:title">
+  <meta content="Menu - Dabus Coffee" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
   <link href="677bbe3f761bd2b2bc7bedd7/css/lined-template.webflow.shared.b0edefc86.css" rel="stylesheet"
@@ -98,7 +98,7 @@
     .main-logo {
       filter: none !important;
       -webkit-filter: none !important;
-      width: 130px !important;
+      width: 200px !important;
       height: auto !important;
     }
 
@@ -143,13 +143,14 @@
 
     /* Mobile Navbar Fixes */
     @media (max-width: 991px) {
+
       /* Reduce top padding now that mobile order button is absolutely positioned */
       .page-content {
         padding-top: 20px !important;
       }
 
       .main-logo {
-        width: 130px !important;
+        width: 200px !important;
       }
 
       /* Mobile Navigation Menu Styles */
@@ -186,7 +187,7 @@
       }
 
       .main-logo {
-        width: 90px !important;
+        width: 130px !important;
       }
 
       .button-text {
@@ -200,7 +201,7 @@
       }
 
       .main-logo {
-        width: 85px !important;
+        width: 105px !important;
       }
 
       .button-text {
@@ -214,11 +215,31 @@
 
     /* Force-remove any extra top gap on small screens */
     @media (max-width: 991px) {
-      html, body { margin: 0; padding: 0; }
-      .page-content { padding-top: 0 !important; }
-      .navbar { margin-top: 0 !important; padding-top: 6px !important; padding-bottom: 6px !important; }
-      .hero-header-section { margin-top: 0 !important; }
-      .logo-link, .main-logo { margin-top: 0 !important; }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .page-content {
+        padding-top: 0 !important;
+      }
+
+      .navbar {
+        margin-top: 0 !important;
+        padding-top: 6px !important;
+        padding-bottom: 6px !important;
+      }
+
+      .hero-header-section {
+        margin-top: 0 !important;
+      }
+
+      .logo-link,
+      .main-logo {
+        margin-top: 0 !important;
+      }
     }
 
     /* Order Online Button Styles */
@@ -226,7 +247,8 @@
       display: flex;
       align-items: center !important;
       gap: 16px;
-      margin-left: auto; /* push nav controls to the right */
+      margin-left: auto;
+      /* push nav controls to the right */
       position: relative;
     }
 
@@ -249,7 +271,8 @@
       cursor: pointer;
       box-shadow: 0 4px 12px rgba(28, 25, 23, 0.15);
       white-space: nowrap;
-      margin-left: 24px; /* nudge further right on desktop */
+      margin-left: 24px;
+      /* nudge further right on desktop */
     }
 
     .nav-order-btn:hover {
@@ -309,15 +332,17 @@
         font-weight: 600;
         text-decoration: none;
         margin-top: 20px;
-        width: auto; /* don't force full-width in header */
+        width: auto;
+        /* don't force full-width in header */
         min-width: 140px;
-        margin-left: auto; /* push the mobile button to the right */
+        margin-left: auto;
+        /* push the mobile button to the right */
         text-align: center;
         box-shadow: 0 4px 12px rgba(28, 25, 23, 0.2);
         transition: background-color 0.2s ease, transform 0.2s ease;
       }
 
-    /* phone-bubble removed - using tel: links instead */
+      /* phone-bubble removed - using tel: links instead */
 
       .nav-order-btn-mobile:hover {
         background-color: #332E2B;
@@ -333,7 +358,7 @@
       border-radius: 12px;
       overflow: hidden;
       margin-top: 24px;
-      box-shadow: 0 6px 24px rgba(28,25,23,0.08);
+      box-shadow: 0 6px 24px rgba(28, 25, 23, 0.08);
     }
 
     .map-embed iframe {
@@ -351,7 +376,7 @@
     }
 
 
-    
+
 
     @media (max-width: 480px) {
       .nav-order-btn {
@@ -392,6 +417,7 @@
         transform: rotate(360deg);
       }
     }
+
     /* Responsive navigation improvements */
     .nav-menu {
       display: flex !important;
@@ -425,9 +451,9 @@
       }
 
       /* When navbar is open (Webflow adds .w--open to the button), show menu */
-      .w-nav-button.w--open + .last-item .nav-menu,
+      .w-nav-button.w--open+.last-item .nav-menu,
       .w-nav.w--open .nav-menu,
-      .w-nav-button.w--open ~ .nav-menu {
+      .w-nav-button.w--open~.nav-menu {
         transform: translateY(0);
       }
 
@@ -452,7 +478,10 @@
       }
 
       /* Ensure hero header doesn't add extra space */
-      .hero-header-section { margin-top: 0 !important; padding-top: 18px !important; }
+      .hero-header-section {
+        margin-top: 0 !important;
+        padding-top: 18px !important;
+      }
     }
 
     /* Desktop / large screens */
@@ -480,7 +509,10 @@
 
     /* Pin mobile Order button to top-right for small screens */
     @media (max-width: 991px) {
-      .navbar { position: relative; }
+      .navbar {
+        position: relative;
+      }
+
       .nav-order-btn-mobile {
         position: absolute !important;
         right: 18px !important;
@@ -492,17 +524,34 @@
         justify-content: center !important;
         align-items: center !important;
         z-index: 10002 !important;
-        box-shadow: 0 6px 18px rgba(28,25,23,0.18) !important;
+        box-shadow: 0 6px 18px rgba(28, 25, 23, 0.18) !important;
       }
     }
 
     /* Final override: ensure no top gap on small screens (placed last to beat earlier rules) */
     @media (max-width: 991px) {
-      .page-content { padding-top: 0 !important; }
-      .navbar, .w-nav { margin-top: 0 !important; }
-      .hero-header-section { margin-top: 0 !important; padding-top: 12px !important; }
-      .logo-link, .main-logo { margin-top: 0 !important; }
-      .nav-menu { padding-top: 20px !important; }
+      .page-content {
+        padding-top: 0 !important;
+      }
+
+      .navbar,
+      .w-nav {
+        margin-top: 0 !important;
+      }
+
+      .hero-header-section {
+        margin-top: 0 !important;
+        padding-top: 12px !important;
+      }
+
+      .logo-link,
+      .main-logo {
+        margin-top: 0 !important;
+      }
+
+      .nav-menu {
+        padding-top: 20px !important;
+      }
     }
   </style>
 </head>
@@ -515,7 +564,7 @@
     <div data-animation="default" class="navbar w-nav" data-easing2="ease" data-easing="ease" data-collapse="medium"
       data-w-id="5e31057a-541e-ead9-75ae-97c28eec02bb" role="banner" data-duration="400" id="Top"><a href="index.html"
         class="logo-link w-nav-brand">
-        <img width="450" loading="lazy" alt="" src="/damas.png" class="main-logo">
+        <img width="550" loading="lazy" alt="" src="/dabusLogo1.png" class="main-logo">
       </a>
       <div class="last-item">
         <nav role="navigation" class="nav-menu w-nav-menu">
@@ -529,7 +578,8 @@
             <path d="M5 12h14M12 5l7 7-7 7" />
           </svg>
         </a>
-        <a href="tel:+251911123456" class="nav-order-btn w-inline-block" id="nav-order-online-btn" aria-label="Order Online">
+        <a href="tel:+251911123456" class="nav-order-btn w-inline-block" id="nav-order-online-btn"
+          aria-label="Order Online">
           <svg class="nav-order-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
@@ -924,9 +974,8 @@
       /* ─── Menu Items ─────────────────────────────────────────── */
       .menu-item {
         display: flex;
-        align-items: baseline;
-        justify-content: space-between;
-        gap: 16px;
+        flex-direction: column;
+        gap: 4px;
         padding: 14px 0;
         border-bottom: 1px solid #F0EDE9;
         cursor: default;
@@ -947,6 +996,13 @@
 
       .menu-item:hover .item-name {
         color: #B85C37;
+      }
+
+      .menu-item-header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 16px;
       }
 
       .item-name {
@@ -974,6 +1030,16 @@
         color: #1C1917;
         white-space: nowrap;
         letter-spacing: -0.01em;
+      }
+
+      .item-description {
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.75rem;
+        font-weight: 300;
+        color: #6B6762;
+        line-height: 1.4;
+        letter-spacing: -0.005em;
+        margin-left: 4px;
       }
 
       /* ─── "View full menu" link inside card ──────────────────── */
@@ -1300,13 +1366,13 @@
       <div class="hero-header-container">
         <div class="hero-header-subtitle">A COZY CORNER FOR MODERN TASTE</div>
         <h1 class="hero-header-title">Better food on<br>every plate</h1>
-        <p class="hero-header-desc">Freshly made, locally loved — crafted with good ingredients and better company.</p>
+        <p class="hero-header-desc">Freshly made, locally loved; crafted with good ingredients and better company.</p>
         <div class="hero-header-actions">
           <a href="#menu" class="hero-btn hero-btn-secondary">Our menu</a>
         </div>
       </div>
       <div class="hero-image-wrapper">
-        <img src="hero.jpg" alt="Better food on every plate - Afro Kitchen" class="hero-banner-img">
+        <img src="/dabusLogo2.png" alt="Better food on every plate - Afro Kitchen" class="hero-banner-img">
       </div>
     </section>
 
@@ -1314,324 +1380,1061 @@
     <section id="menu" class="menu-section">
       <div class="menu-container">
 
-        <!-- HOT DRINKS -->
+        <!-- ETHIOPIAN BREAKFAST -->
         <div class="menu-card">
           <div class="menu-image-col">
-            <span class="menu-img-tag">Hot Drinks</span>
-            <img src="/hotDrinks.jpg" alt="Hot Drinks at Afro Kitchen">
+            <span class="menu-img-tag">Ethiopian Breakfast</span>
+            <img src="/ethiopianBreakfast.jpg" alt="Ethiopian Breakfast at Dabus">
           </div>
           <div class="menu-content-col">
-            <h2 class="menu-section-title">Hot Drinks</h2>
+            <h2 class="menu-section-title">Ethiopian Breakfast</h2>
             <div class="menu-item">
-              <span class="item-name">Tea</span>
-              <span class="item-dots"></span>
-              <span class="item-price">60.00 Birr</span>
+              <div class="menu-item-header">
+                <span class="item-name">Dabus Full</span>
+                <span class="item-dots"></span>
+                <span class="item-price">450.00 Br</span>
+              </div>
+              <div class="item-description">Slow-cooked fava beans served with egg, yoghurt, chili, and avocado, tuna</div>
             </div>
             <div class="menu-item">
-              <span class="item-name">Tea with Honey</span>
-              <span class="item-dots"></span>
-              <span class="item-price">90.00 Birr</span>
+              <div class="menu-item-header">
+                <span class="item-name">Teff Chechebsa Deluxe</span>
+                <span class="item-dots"></span>
+                <span class="item-price">500.00 Br</span>
+              </div>
+              <div class="item-description">Traditional torn flatbread gently sautéed in aromatic spiced butter, finished with honey, scrambled egg</div>
             </div>
             <div class="menu-item">
-              <span class="item-name">Coffee</span>
-              <span class="item-dots"></span>
-              <span class="item-price">60.00 Birr</span>
+              <div class="menu-item-header">
+                <span class="item-name">Teff Chechebsa</span>
+                <span class="item-dots"></span>
+                <span class="item-price">400.00 Br</span>
+              </div>
+              <div class="item-description">Traditional torn flatbread gently sautéed in aromatic spiced butter, finished with honey</div>
             </div>
             <div class="menu-item">
-              <span class="item-name">Cappuccino</span>
-              <span class="item-dots"></span>
-              <span class="item-price">105.00 Birr</span>
+              <div class="menu-item-header">
+                <span class="item-name">Classic Full</span>
+                <span class="item-dots"></span>
+                <span class="item-price">400.00 Br</span>
+              </div>
+              <div class="item-description">Slow-cooked fava beans mashed with olive oil, garlic, and green chili, served with warm bread</div>
             </div>
             <div class="menu-item">
-              <span class="item-name">Cafe Latte</span>
-              <span class="item-dots"></span>
-              <span class="item-price">95.00 Birr</span>
+              <div class="menu-item-header">
+                <span class="item-name">Fetira</span>
+                <span class="item-dots"></span>
+                <span class="item-price">400.00 Br</span>
+              </div>
+              <div class="item-description">Traditional Ethiopian layered flatbread, pan-toasted with honey</div>
             </div>
             <div class="menu-item">
-              <span class="item-name">Macchiato</span>
-              <span class="item-dots"></span>
-              <span class="item-price">65.00 Birr</span>
+              <div class="menu-item-header">
+                <span class="item-name">Kinché</span>
+                <span class="item-dots"></span>
+                <span class="item-price">400.00 Br</span>
+              </div>
+              <div class="item-description">Comforting cracked wheat simmered to a creamy texture, enriched with spiced butter and served with honey</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Aja Fetira Normal</span>
+                <span class="item-dots"></span>
+                <span class="item-price">350.00 Br</span>
+              </div>
+              <div class="item-description">Flatbread, honey</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Aja Fetira Special</span>
+                <span class="item-dots"></span>
+                <span class="item-price">450.00 Br</span>
+              </div>
+              <div class="item-description">Flatbread, honey, egg</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Hummus</span>
+                <span class="item-dots"></span>
+                <span class="item-price">450.00 Br</span>
+              </div>
+              <div class="item-description">Chickpea, sesame, and olive oil served with flatbread</div>
             </div>
 
           </div>
         </div>
 
-        <!-- COLD DRINKS -->
+        <!-- SWEET & INDULGENT BREAKFAST -->
         <div class="menu-card reverse">
           <div class="menu-image-col">
-            <span class="menu-img-tag">Cold Drinks</span>
-            <img src="/coldDrinks.jpg" alt="Cold Drinks at Afro Kitchen">
+            <span class="menu-img-tag">Sweet Breakfast</span>
+            <img src="/Sweet&IndulgentBreakfast.jpeg" alt="Sweet & Indulgent Breakfast at Dabus">
           </div>
           <div class="menu-content-col">
-            <h2 class="menu-section-title">Cold Drinks</h2>
+            <h2 class="menu-section-title">Sweet &amp; Indulgent Breakfast</h2>
             <div class="menu-item">
-              <span class="item-name">Ambo Sparkling Water</span>
-              <span class="item-dots"></span>
-              <span class="item-price">50.00 Birr</span>
+              <div class="menu-item-header">
+                <span class="item-name">Pancake</span>
+                <span class="item-dots"></span>
+                <span class="item-price">500.00 Br</span>
+              </div>
+              <div class="item-description">Soft, fluffy pancakes served warm with Ethiopian-inspired topping with fruit</div>
             </div>
             <div class="menu-item">
-              <span class="item-name">Bottled Water</span>
-              <span class="item-dots"></span>
-              <span class="item-price">45.00 Birr</span>
+              <div class="menu-item-header">
+                <span class="item-name">Classic French Toast</span>
+                <span class="item-dots"></span>
+                <span class="item-price">500.00 Br</span>
+              </div>
+              <div class="item-description">Golden bread soaked in vanilla custard, served with maple syrup and seasonal fruits</div>
             </div>
             <div class="menu-item">
-              <span class="item-name">Soft Drinks</span>
-              <span class="item-dots"></span>
-              <span class="item-price">50.00 Birr</span>
-            </div>
-            <div class="menu-item">
-              <span class="item-name">Ice Tea</span>
-              <span class="item-dots"></span>
-              <span class="item-price">75.00 Birr</span>
-            </div>
-            <div class="menu-item">
-              <span class="item-name">Ice Coffee</span>
-              <span class="item-dots"></span>
-              <span class="item-price">50.00 Birr</span>
-            </div>
-            <div class="menu-item">
-              <span class="item-name">Ice Latte</span>
-              <span class="item-dots"></span>
-              <span class="item-price">95.00 Birr</span>
+              <div class="menu-item-header">
+                <span class="item-name">Waffles</span>
+                <span class="item-dots"></span>
+                <span class="item-price">500.00 Br</span>
+              </div>
+              <div class="item-description">Crispy outside, soft inside. Served with banana, strawberry, and choice of caramel or chocolate drizzle</div>
             </div>
 
           </div>
         </div>
 
-        <!-- BREAKFAST / SANDWICHES -->
+        <!-- EGG & SAVORY BREAKFAST -->
         <div class="menu-card">
           <div class="menu-image-col">
-            <span class="menu-img-tag">Breakfast</span>
-            <img src="breakfast.jpg" alt="Breakfast at Afro Kitchen">
+            <span class="menu-img-tag">Egg Breakfast</span>
+            <img src="/egg&SavoryBreakfast.jpg" alt="Egg & Savory Breakfast at Dabus">
           </div>
           <div class="menu-content-col">
-            <h2 class="menu-section-title">Breakfast &amp; Sandwiches</h2>
+            <h2 class="menu-section-title">Egg &amp; Savory Breakfast</h2>
             <div class="menu-item">
-              <span class="item-name">Croissant with Egg &amp; Cheese Sandwich</span>
-              <span class="item-dots"></span>
-              <span class="item-price">380.00 Birr</span>
+              <div class="menu-item-header">
+                <span class="item-name">Dabus Special Eggs</span>
+                <span class="item-dots"></span>
+                <span class="item-price">600.00 Br</span>
+              </div>
+              <div class="item-description">Fluffy farm eggs with creamy avocado, sautéed onion, and mild chili. Tuna &amp; served with artisan toast, seasonal fruit</div>
             </div>
             <div class="menu-item">
-              <span class="item-name">Croissant with Egg &amp; Beef Sandwich</span>
-              <span class="item-dots"></span>
-              <span class="item-price">395.00 Birr</span>
+              <div class="menu-item-header">
+                <span class="item-name">Cheese Omelet</span>
+                <span class="item-dots"></span>
+                <span class="item-price">500.00 Br</span>
+              </div>
+              <div class="item-description">Egg, cheese, onion, tomato &amp; chili</div>
             </div>
             <div class="menu-item">
-              <span class="item-name">French Toast</span>
-              <span class="item-dots"></span>
-              <span class="item-price">215.00 Birr</span>
+              <div class="menu-item-header">
+                <span class="item-name">Egg Sandwiches</span>
+                <span class="item-dots"></span>
+                <span class="item-price">400.00 Br</span>
+              </div>
+              <div class="item-description">Egg, cheese, onion, tomato &amp; chili</div>
             </div>
             <div class="menu-item">
-              <span class="item-name">Scrambled Eggs</span>
-              <span class="item-dots"></span>
-              <span class="item-price">250.00 Birr</span>
+              <div class="menu-item-header">
+                <span class="item-name">Scrambled Egg</span>
+                <span class="item-dots"></span>
+                <span class="item-price">400.00 Br</span>
+              </div>
+              <div class="item-description">Egg, onion, tomato, chili &amp; bread</div>
             </div>
             <div class="menu-item">
-              <span class="item-name">Plain Omelet</span>
-              <span class="item-dots"></span>
-              <span class="item-price">250.00 Birr</span>
+              <div class="menu-item-header">
+                <span class="item-name">Egg Silks</span>
+                <span class="item-dots"></span>
+                <span class="item-price">480.00 Br</span>
+              </div>
+              <div class="item-description">Egg, tomato sauce &amp; bread</div>
             </div>
             <div class="menu-item">
-              <span class="item-name">Waffles</span>
-              <span class="item-dots"></span>
-              <span class="item-price">265.00 Birr</span>
+              <div class="menu-item-header">
+                <span class="item-name">Egg Croissant Sandwich</span>
+                <span class="item-dots"></span>
+                <span class="item-price">550.00 Br</span>
+              </div>
+              <div class="item-description">Flaky croissant with creamy cheese and soft egg</div>
             </div>
 
           </div>
         </div>
 
-        <!-- PASTRIES / CAKES -->
+        <!-- HEALTHY BOWLS OPTIONS -->
         <div class="menu-card reverse">
           <div class="menu-image-col">
-            <span class="menu-img-tag">Pastries &amp; Cakes</span>
-            <img src="/cakes.jpg" alt="Pastries and Cakes at Afro Kitchen">
+            <span class="menu-img-tag">Healthy Bowls</span>
+            <img src="/healthyBowlsOptions.jpg" alt="Healthy Bowls at Dabus">
           </div>
           <div class="menu-content-col">
-            <h2 class="menu-section-title">Pastries &amp; Cakes</h2>
+            <h2 class="menu-section-title">Healthy Bowls Options</h2>
             <div class="menu-item">
-              <span class="item-name">Apple Pie</span>
-              <span class="item-dots"></span>
-              <span class="item-price">165.00 Birr</span>
+              <div class="menu-item-header">
+                <span class="item-name">Chocolate Oat Bowl</span>
+                <span class="item-dots"></span>
+                <span class="item-price">500.00 Br</span>
+              </div>
+              <div class="item-description">Rich oats blended with cocoa, banana, avocado, dates, raisins, and granola</div>
             </div>
             <div class="menu-item">
-              <span class="item-name">Banana Cake</span>
-              <span class="item-dots"></span>
-              <span class="item-price">90.00 Birr</span>
-            </div>
-            <div class="menu-item">
-              <span class="item-name">Brownie</span>
-              <span class="item-dots"></span>
-              <span class="item-price">125.00 Birr</span>
-            </div>
-            <div class="menu-item">
-              <span class="item-name">Chocolate Pie</span>
-              <span class="item-dots"></span>
-              <span class="item-price">115.00 Birr</span>
-            </div>
-            <div class="menu-item">
-              <span class="item-name">Croissant</span>
-              <span class="item-dots"></span>
-              <span class="item-price">90.00 Birr</span>
-            </div>
-            <div class="menu-item">
-              <span class="item-name">Chocolate Croissant</span>
-              <span class="item-dots"></span>
-              <span class="item-price">105.00 Birr</span>
+              <div class="menu-item-header">
+                <span class="item-name">Breakfast Bowl</span>
+                <span class="item-dots"></span>
+                <span class="item-price">500.00 Br</span>
+              </div>
+              <div class="item-description">A nutrient-rich mix of yogurt, chia seeds, fresh fruits, granola, and honey</div>
             </div>
 
           </div>
         </div>
 
-        <!-- BURGERS / SANDWICHES -->
-        <div class="menu-card">
-          <div class="menu-image-col">
-            <span class="menu-img-tag">Burgers &amp; Sandwiches</span>
-            <img src="/burgers.jpg" alt="Burgers and Sandwiches at Afro Kitchen">
-          </div>
-          <div class="menu-content-col">
-            <h2 class="menu-section-title">Burgers &amp; Sandwiches</h2>
-            <div class="menu-item">
-              <span class="item-name">Single Cheese Burger</span>
-              <span class="item-dots"></span>
-              <span class="item-price">425.00 Birr</span>
-            </div>
-            <div class="menu-item">
-              <span class="item-name">Double Cheese Burger</span>
-              <span class="item-dots"></span>
-              <span class="item-price">490.00 Birr</span>
-            </div>
-            <div class="menu-item">
-              <span class="item-name">Grilled Chicken Sandwich</span>
-              <span class="item-dots"></span>
-              <span class="item-price">450.00 Birr</span>
-            </div>
-            <div class="menu-item">
-              <span class="item-name">House Special Burger</span>
-              <span class="item-dots"></span>
-              <span class="item-price">550.00 Birr</span>
-            </div>
-            <div class="menu-item">
-              <span class="item-name">Philly Style Steak &amp; Cheese</span>
-              <span class="item-dots"></span>
-              <span class="item-price">450.00 Birr</span>
-            </div>
-            <div class="menu-item">
-              <span class="item-name">Avocado &amp; Tomato Sandwich</span>
-              <span class="item-dots"></span>
-              <span class="item-price">250.00 Birr</span>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- JUICES -->
-        <div class="menu-card reverse">
-          <div class="menu-image-col">
-            <span class="menu-img-tag">Fresh Juices</span>
-            <img src="/juices.jpg" alt="Fresh Juices at Afro Kitchen">
-          </div>
-          <div class="menu-content-col">
-            <h2 class="menu-section-title">Fresh Juices</h2>
-            <div class="menu-item">
-              <span class="item-name">Mango Juice</span>
-              <span class="item-dots"></span>
-              <span class="item-price">165.00 Birr</span>
-            </div>
-            <div class="menu-item">
-              <span class="item-name">Avocado Juice</span>
-              <span class="item-dots"></span>
-              <span class="item-price">165.00 Birr</span>
-            </div>
-            <div class="menu-item">
-              <span class="item-name">Orange Juice</span>
-              <span class="item-dots"></span>
-              <span class="item-price">195.00 Birr</span>
-            </div>
-            <div class="menu-item">
-              <span class="item-name">Strawberry Juice</span>
-              <span class="item-dots"></span>
-              <span class="item-price">185.00 Birr</span>
-            </div>
-            <div class="menu-item">
-              <span class="item-name">Pineapple Juice</span>
-              <span class="item-dots"></span>
-              <span class="item-price">165.00 Birr</span>
-            </div>
-            <div class="menu-item">
-              <span class="item-name">Mixed Juice</span>
-              <span class="item-dots"></span>
-              <span class="item-price">245.00 Birr</span>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- SALADS -->
+        <!-- LUNCH & SNACK - SALADS -->
         <div class="menu-card">
           <div class="menu-image-col">
             <span class="menu-img-tag">Salads</span>
-            <img src="/salads.jpg" alt="Salads at Afro Kitchen">
+            <img src="/salads.jpg" alt="Salads at Dabus">
           </div>
           <div class="menu-content-col">
-            <h2 class="menu-section-title">Salads</h2>
+            <h2 class="menu-section-title">Lunch &amp; Snack</h2>
             <div class="menu-item">
-              <span class="item-name">Salad with Bread</span>
-              <span class="item-dots"></span>
-              <span class="item-price">250.00 Birr</span>
+              <div class="menu-item-header">
+                <span class="item-name">Grilled Chicken Garden Salad</span>
+                <span class="item-dots"></span>
+                <span class="item-price">680.00 Br</span>
+              </div>
+              <div class="item-description">Juicy grilled chicken breast over crisp greens, cucumber, cherry tomato, and house dressing</div>
             </div>
             <div class="menu-item">
-              <span class="item-name">Chicken Salad</span>
-              <span class="item-dots"></span>
-              <span class="item-price">400.00 Birr</span>
+              <div class="menu-item-header">
+                <span class="item-name">Tropical Salad</span>
+                <span class="item-dots"></span>
+                <span class="item-price">560.00 Br</span>
+              </div>
+              <div class="item-description">A vibrant mix of avocado, mango, sweet peppers, and fresh greens</div>
             </div>
             <div class="menu-item">
-              <span class="item-name">Tuna Salad</span>
-              <span class="item-dots"></span>
-              <span class="item-price">300.00 Birr</span>
+              <div class="menu-item-header">
+                <span class="item-name">Superfood Salad</span>
+                <span class="item-dots"></span>
+                <span class="item-price">680.00 Br</span>
+              </div>
+              <div class="item-description">A balanced blend of chickpeas, kidney beans, black beans, chia seeds, and mixed lettuce</div>
             </div>
 
           </div>
         </div>
 
-        <!-- COOKIES -->
+        <!-- SANDWICH AND BURGER -->
         <div class="menu-card reverse">
           <div class="menu-image-col">
-            <span class="menu-img-tag">Cookies · per 1kg</span>
-            <img src="/cookies.jpg" alt="Cookies at Afro Kitchen">
+            <span class="menu-img-tag">Sandwiches &amp; Burgers</span>
+            <img src="/burgers.jpg" alt="Sandwiches and Burgers at Dabus">
           </div>
           <div class="menu-content-col">
-            <h2 class="menu-section-title">Cookies <span
-                style="font-size:0.75em;font-weight:400;opacity:0.5;font-family:'Inter',sans-serif;">/ per 1kg</span>
-            </h2>
+            <h2 class="menu-section-title">Sandwich &amp; Burger</h2>
             <div class="menu-item">
-              <span class="item-name">Teff Vanilla Cookies</span>
-              <span class="item-dots"></span>
-              <span class="item-price">590.00 Birr</span>
+              <div class="menu-item-header">
+                <span class="item-name">Dabus Signature Burger</span>
+                <span class="item-dots"></span>
+                <span class="item-price">650.00 Br</span>
+              </div>
+              <div class="item-description">Premium double beef patty with melted cheese, caramelized onion, lettuce, and signature sauce</div>
             </div>
             <div class="menu-item">
-              <span class="item-name">Vanilla Cookies</span>
-              <span class="item-dots"></span>
-              <span class="item-price">590.00 Birr</span>
+              <div class="menu-item-header">
+                <span class="item-name">Chicken Burger</span>
+                <span class="item-dots"></span>
+                <span class="item-price">600.00 Br</span>
+              </div>
+              <div class="item-description">Chicken patty with melted cheese, caramelized onion, lettuce, and signature sauce</div>
             </div>
             <div class="menu-item">
-              <span class="item-name">Chocolate Cookies</span>
-              <span class="item-dots"></span>
-              <span class="item-price">590.00 Birr</span>
+              <div class="menu-item-header">
+                <span class="item-name">Cheeseburger</span>
+                <span class="item-dots"></span>
+                <span class="item-price">600.00 Br</span>
+              </div>
+              <div class="item-description">Premium beef patty, cheese, caramelized onion, lettuce, and signature sauce</div>
             </div>
             <div class="menu-item">
-              <span class="item-name">Chocolate Chip Cookies</span>
-              <span class="item-dots"></span>
-              <span class="item-price">590.00 Birr</span>
+              <div class="menu-item-header">
+                <span class="item-name">Grilled Chicken Sandwich</span>
+                <span class="item-dots"></span>
+                <span class="item-price">650.00 Br</span>
+              </div>
+              <div class="item-description">Tender chicken, melted mozzarella, and creamy coleslaw in toasted bread</div>
             </div>
             <div class="menu-item">
-              <span class="item-name">Oatmeal Cookies</span>
-              <span class="item-dots"></span>
-              <span class="item-price">590.00 Birr</span>
+              <div class="menu-item-header">
+                <span class="item-name">Tuna Avocado Sandwich</span>
+                <span class="item-dots"></span>
+                <span class="item-price">850.00 Br</span>
+              </div>
+              <div class="item-description">Fresh tuna paired with avocado and crunchy vegetables</div>
             </div>
             <div class="menu-item">
-              <span class="item-name">Cinnamon Cookies</span>
-              <span class="item-dots"></span>
-              <span class="item-price">590.00 Birr</span>
+              <div class="menu-item-header">
+                <span class="item-name">BBQ Chicken Wrap</span>
+                <span class="item-dots"></span>
+                <span class="item-price">700.00 Br</span>
+              </div>
+              <div class="item-description">Grilled chicken, avocado, coleslaw, and smoky BBQ sauce</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Chicken Wrap</span>
+                <span class="item-dots"></span>
+                <span class="item-price">700.00 Br</span>
+              </div>
+              <div class="item-description">A combination of tuna, mozzarella cheese, vegetables, and mayo sauce served with fries</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Tuna Sandwich</span>
+                <span class="item-dots"></span>
+                <span class="item-price">650.00 Br</span>
+              </div>
+              <div class="item-description">Grilled chicken, avocado, coleslaw</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Vegetable Wrap</span>
+                <span class="item-dots"></span>
+                <span class="item-price">580.00 Br</span>
+              </div>
+              <div class="item-description">A combination of tuna, avocado, and vegetables, served with fries</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- SNACKS & LIGHT BITES -->
+        <div class="menu-card">
+          <div class="menu-image-col">
+            <span class="menu-img-tag">Snacks</span>
+            <img src="/snacks&LightBites.jpeg" alt="Snacks & Light Bites at Dabus">
+          </div>
+          <div class="menu-content-col">
+            <h2 class="menu-section-title">Snacks &amp; Light Bites</h2>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Crispy Seasoned Fries</span>
+                <span class="item-dots"></span>
+                <span class="item-price">350.00 Br</span>
+              </div>
+              <div class="item-description">Golden fries finished with house spices</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Spicy Chicken Bites</span>
+                <span class="item-dots"></span>
+                <span class="item-price">900.00 Br</span>
+              </div>
+              <div class="item-description">Crispy fried chicken pieces served with dipping sauce &amp; chips</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Samosa</span>
+                <span class="item-dots"></span>
+                <span class="item-price">220.00 Br</span>
+              </div>
+              <div class="item-description">Crisp pastry filled with lentils and chips</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- PASTA DISH -->
+        <div class="menu-card reverse">
+          <div class="menu-image-col">
+            <span class="menu-img-tag">Pasta</span>
+            <img src="/pastaDish.jpg" alt="Pasta Dishes at Dabus">
+          </div>
+          <div class="menu-content-col">
+            <h2 class="menu-section-title">Pasta Dish</h2>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Chicken Pesto Alfredo</span>
+                <span class="item-dots"></span>
+                <span class="item-price">750.00 Br</span>
+              </div>
+              <div class="item-description">Tagliatelle, spaghetti, or penne tossed in aromatic basil pesto with grilled chicken</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Tuna Cream</span>
+                <span class="item-dots"></span>
+                <span class="item-price">680.00 Br</span>
+              </div>
+              <div class="item-description">Tagliatelle, spaghetti, or penne with savory tuna in light garlic cream sauce</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Classic Tomato Basil</span>
+                <span class="item-dots"></span>
+                <span class="item-price">600.00 Br</span>
+              </div>
+              <div class="item-description">Tagliatelle, spaghetti, or penne; classic tomato and basil, fresh &amp; tangy</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Vegetable Primavera</span>
+                <span class="item-dots"></span>
+                <span class="item-price">500.00 Br</span>
+              </div>
+              <div class="item-description">Tagliatelle, spaghetti, or penne with seasonal vegetables in light herb sauce</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Lasagna</span>
+                <span class="item-dots"></span>
+                <span class="item-price">900.00 Br</span>
+              </div>
+              <div class="item-description">Meat sauce, mozzarella cheese, butter</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- PIZZA SELECTION -->
+        <div class="menu-card">
+          <div class="menu-image-col">
+            <span class="menu-img-tag">Pizza</span>
+            <img src="/pizzaSelection.jpg" alt="Pizza Selection at Dabus">
+          </div>
+          <div class="menu-content-col">
+            <h2 class="menu-section-title">Pizza Selection</h2>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Special Pizza</span>
+                <span class="item-dots"></span>
+                <span class="item-price">1100.00 Br</span>
+              </div>
+              <div class="item-description">Chicken, tuna, black olive, mozzarella cheese, sweet pepper, egg, and pineapple</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">BBQ Chicken Pizza</span>
+                <span class="item-dots"></span>
+                <span class="item-price">980.00 Br</span>
+              </div>
+              <div class="item-description">Smoky BBQ chicken with mozzarella and olives</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Meat Lovers Pizza</span>
+                <span class="item-dots"></span>
+                <span class="item-price">850.00 Br</span>
+              </div>
+              <div class="item-description">A hearty combination of chicken, beef, and sausage</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Classic Margherita</span>
+                <span class="item-dots"></span>
+                <span class="item-price">800.00 Br</span>
+              </div>
+              <div class="item-description">Simple, elegant tomato and mozzarella</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Tuna Supreme Pizza</span>
+                <span class="item-dots"></span>
+                <span class="item-price">850.00 Br</span>
+              </div>
+              <div class="item-description">Tuna, sweet corn, chili, onion, and olives</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Vegetarian Garden Pizza</span>
+                <span class="item-dots"></span>
+                <span class="item-price">680.00 Br</span>
+              </div>
+              <div class="item-description">Fresh seasonal vegetables with herbs and cheese</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Chicken Pizza</span>
+                <span class="item-dots"></span>
+                <span class="item-price">900.00 Br</span>
+              </div>
+              <div class="item-description">Chicken with mozzarella and olives</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- HOT BEVERAGE -->
+        <div class="menu-card">
+          <div class="menu-image-col">
+            <span class="menu-img-tag">Hot Beverages</span>
+            <img src="/HotBeverage.webp" alt="Hot Beverages at Dabus">
+          </div>
+          <div class="menu-content-col">
+            <h2 class="menu-section-title">Hot Beverage</h2>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Ye Gebena Buna (3 cups)</span>
+                <span class="item-dots"></span>
+                <span class="item-price">150.00 Br</span>
+              </div>
+              <div class="item-description">Traditional Ethiopian coffee ceremony</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Coffee</span>
+                <span class="item-dots"></span>
+                <span class="item-price">100.00 Br</span>
+              </div>
+              <div class="item-description">Rich and bold espresso-based coffee</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Espresso</span>
+                <span class="item-dots"></span>
+                <span class="item-price">100.00 Br</span>
+              </div>
+              <div class="item-description">Single shot of concentrated espresso</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Macchiato</span>
+                <span class="item-dots"></span>
+                <span class="item-price">140.00 Br</span>
+              </div>
+              <div class="item-description">Espresso with a touch of steamed milk</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Double Macchiato</span>
+                <span class="item-dots"></span>
+                <span class="item-price">200.00 Br</span>
+              </div>
+              <div class="item-description">Double espresso with steamed milk</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Café Latte</span>
+                <span class="item-dots"></span>
+                <span class="item-price">180.00 Br</span>
+              </div>
+              <div class="item-description">Smooth espresso with velvety steamed milk</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Americano</span>
+                <span class="item-dots"></span>
+                <span class="item-price">100.00 Br</span>
+              </div>
+              <div class="item-description">Espresso diluted with hot water</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Ginger Tea</span>
+                <span class="item-dots"></span>
+                <span class="item-price">90.00 Br</span>
+              </div>
+              <div class="item-description">Warm tea infused with fresh ginger</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Hot Chocolate</span>
+                <span class="item-dots"></span>
+                <span class="item-price">230.00 Br</span>
+              </div>
+              <div class="item-description">Rich and creamy hot chocolate</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Milk with Honey</span>
+                <span class="item-dots"></span>
+                <span class="item-price">180.00 Br</span>
+              </div>
+              <div class="item-description">Warm milk sweetened with honey</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Milk with Ginger</span>
+                <span class="item-dots"></span>
+                <span class="item-price">180.00 Br</span>
+              </div>
+              <div class="item-description">Warm milk with soothing ginger</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Tea</span>
+                <span class="item-dots"></span>
+                <span class="item-price">65.00 Br</span>
+              </div>
+              <div class="item-description">Fresh brewed black tea</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Milk</span>
+                <span class="item-dots"></span>
+                <span class="item-price">140.00 Br</span>
+              </div>
+              <div class="item-description">Warm steamed milk</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Special Tea</span>
+                <span class="item-dots"></span>
+                <span class="item-price">280.00 Br</span>
+              </div>
+              <div class="item-description">Premium blend tea with special ingredients</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Cappuccino</span>
+                <span class="item-dots"></span>
+                <span class="item-price">250.00 Br</span>
+              </div>
+              <div class="item-description">Espresso with thick layer of milk foam</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- JUICES - AVOCADO -->
+        <div class="menu-card reverse">
+          <div class="menu-image-col">
+            <span class="menu-img-tag">Fresh Juices</span>
+            <img src="/avocado.jpg" alt="Fresh Juices at Dabus">
+          </div>
+          <div class="menu-content-col">
+            <h2 class="menu-section-title">Juice &mdash; Avocado</h2>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Dabus Special Juice</span>
+                <span class="item-dots"></span>
+                <span class="item-price">500.00 Br</span>
+              </div>
+              <div class="item-description">Avocado, date, strawberry, Oreo, milk, mango</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Green Life</span>
+                <span class="item-dots"></span>
+                <span class="item-price">390.00 Br</span>
+              </div>
+              <div class="item-description">Avocado, peanut, honey</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Classic Avocado</span>
+                <span class="item-dots"></span>
+                <span class="item-price">300.00 Br</span>
+              </div>
+              <div class="item-description">Avocado, honey</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- JUICES - PAPAYA -->
+        <div class="menu-card">
+          <div class="menu-image-col">
+            <span class="menu-img-tag">Papaya Juices</span>
+            <img src="/papaya.jpg" alt="Papaya Juices at Dabus">
+          </div>
+          <div class="menu-content-col">
+            <h2 class="menu-section-title">Juice &mdash; Papaya</h2>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Sweet Dessert</span>
+                <span class="item-dots"></span>
+                <span class="item-price">330.00 Br</span>
+              </div>
+              <div class="item-description">Papaya, date, banana, honey, milk</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Papaya Flex</span>
+                <span class="item-dots"></span>
+                <span class="item-price">300.00 Br</span>
+              </div>
+              <div class="item-description">Papaya, flaxseed, honey, banana, milk</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- JUICES - MANGO -->
+        <div class="menu-card reverse">
+          <div class="menu-image-col">
+            <span class="menu-img-tag">Mango Juices</span>
+            <img src="/mango.jpeg" alt="Mango Juices at Dabus">
+          </div>
+          <div class="menu-content-col">
+            <h2 class="menu-section-title">Juice &mdash; Mango</h2>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Sunshine Paradise</span>
+                <span class="item-dots"></span>
+                <span class="item-price">360.00 Br</span>
+              </div>
+              <div class="item-description">Mango, banana, carrot, honey, milk</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Pink Sweet</span>
+                <span class="item-dots"></span>
+                <span class="item-price">360.00 Br</span>
+              </div>
+              <div class="item-description">Mango, banana, strawberry, honey, milk</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Classic Mango</span>
+                <span class="item-dots"></span>
+                <span class="item-price">300.00 Br</span>
+              </div>
+              <div class="item-description">Mango, honey</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- JUICES - PINEAPPLE -->
+        <div class="menu-card">
+          <div class="menu-image-col">
+            <span class="menu-img-tag">Pineapple Juices</span>
+            <img src="/pineapple.jpg" alt="Pineapple Juices at Dabus">
+          </div>
+          <div class="menu-content-col">
+            <h2 class="menu-section-title">Juice &mdash; Pineapple</h2>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Sunshine Smoothie</span>
+                <span class="item-dots"></span>
+                <span class="item-price">360.00 Br</span>
+              </div>
+              <div class="item-description">Carrot, banana, pineapple, honey</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Pineapple Banana Smoothie</span>
+                <span class="item-dots"></span>
+                <span class="item-price">330.00 Br</span>
+              </div>
+              <div class="item-description">Pineapple, banana, honey</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Classic Pineapple</span>
+                <span class="item-dots"></span>
+                <span class="item-price">300.00 Br</span>
+              </div>
+              <div class="item-description">Pineapple, honey</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- JUICES - WATERMELON -->
+        <div class="menu-card reverse">
+          <div class="menu-image-col">
+            <span class="menu-img-tag">Watermelon Juices</span>
+            <img src="/watermelon.jpeg" alt="Watermelon Juices at Dabus">
+          </div>
+          <div class="menu-content-col">
+            <h2 class="menu-section-title">Juice &mdash; Watermelon</h2>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Watermelon Strawberry Juice</span>
+                <span class="item-dots"></span>
+                <span class="item-price">300.00 Br</span>
+              </div>
+              <div class="item-description">Watermelon, honey, strawberry</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Watermelon Juice</span>
+                <span class="item-dots"></span>
+                <span class="item-price">290.00 Br</span>
+              </div>
+              <div class="item-description">Watermelon, honey</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- BEVERAGE COLLECTION - MOJITOS -->
+        <div class="menu-card">
+          <div class="menu-image-col">
+            <span class="menu-img-tag">Mojitos</span>
+            <img src="/mojito.jpg" alt="Mojitos at Dabus">
+          </div>
+          <div class="menu-content-col">
+            <h2 class="menu-section-title">Refreshing Mojitos</h2>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Classic Mojito</span>
+                <span class="item-dots"></span>
+                <span class="item-price">300.00 Br</span>
+              </div>
+              <div class="item-description">Refreshing mint-based mojito</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Strawberry Mojito</span>
+                <span class="item-dots"></span>
+                <span class="item-price">350.00 Br</span>
+              </div>
+              <div class="item-description">Fresh strawberries with mint</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Pineapple Mojito</span>
+                <span class="item-dots"></span>
+                <span class="item-price">350.00 Br</span>
+              </div>
+              <div class="item-description">Tropical pineapple with mint</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- SIGNATURE SMOOTHIES -->
+        <div class="menu-card reverse">
+          <div class="menu-image-col">
+            <span class="menu-img-tag">Smoothies</span>
+            <img src="/signatureSmoothies.jpeg" alt="Signature Smoothies at Dabus">
+          </div>
+          <div class="menu-content-col">
+            <h2 class="menu-section-title">Signature Smoothies</h2>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Peanut Coffee Smoothie</span>
+                <span class="item-dots"></span>
+                <span class="item-price">390.00 Br</span>
+              </div>
+              <div class="item-description">Creamy peanut blended with coffee</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Chocolate Coffee Smoothie</span>
+                <span class="item-dots"></span>
+                <span class="item-price">390.00 Br</span>
+              </div>
+              <div class="item-description">Rich chocolate and coffee blend</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Caramel Coffee Smoothie</span>
+                <span class="item-dots"></span>
+                <span class="item-price">400.00 Br</span>
+              </div>
+              <div class="item-description">Smooth caramel with espresso</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Mango Smoothie</span>
+                <span class="item-dots"></span>
+                <span class="item-price">400.00 Br</span>
+              </div>
+              <div class="item-description">Tropical mango smoothie</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Avocado Mango Smoothie</span>
+                <span class="item-dots"></span>
+                <span class="item-price">450.00 Br</span>
+              </div>
+              <div class="item-description">Creamy avocado with fresh mango</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Strawberry Smoothie</span>
+                <span class="item-dots"></span>
+                <span class="item-price">450.00 Br</span>
+              </div>
+              <div class="item-description">Fresh strawberry smoothie</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ICED BEVERAGE -->
+        <div class="menu-card">
+          <div class="menu-image-col">
+            <span class="menu-img-tag">Iced Beverages</span>
+            <img src="/icedBeverage.jpg" alt="Iced Beverages at Dabus">
+          </div>
+          <div class="menu-content-col">
+            <h2 class="menu-section-title">Iced Beverage</h2>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Ice Mocha</span>
+                <span class="item-dots"></span>
+                <span class="item-price">400.00 Br</span>
+              </div>
+              <div class="item-description">Chilled espresso with chocolate and milk</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Ice Chocolate</span>
+                <span class="item-dots"></span>
+                <span class="item-price">400.00 Br</span>
+              </div>
+              <div class="item-description">Cold chocolate drink</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Ice Caramel</span>
+                <span class="item-dots"></span>
+                <span class="item-price">400.00 Br</span>
+              </div>
+              <div class="item-description">Iced caramel drink</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Ice Coffee</span>
+                <span class="item-dots"></span>
+                <span class="item-price">250.00 Br</span>
+              </div>
+              <div class="item-description">Chilled coffee with ice</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Ice Americano</span>
+                <span class="item-dots"></span>
+                <span class="item-price">250.00 Br</span>
+              </div>
+              <div class="item-description">Iced americano with cold water</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Ice Latte</span>
+                <span class="item-dots"></span>
+                <span class="item-price">300.00 Br</span>
+              </div>
+              <div class="item-description">Cold espresso with iced milk</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Ice Vanilla Latte</span>
+                <span class="item-dots"></span>
+                <span class="item-price">400.00 Br</span>
+              </div>
+              <div class="item-description">Iced latte with vanilla flavor</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Special Ice Latte</span>
+                <span class="item-dots"></span>
+                <span class="item-price">400.00 Br</span>
+              </div>
+              <div class="item-description">Premium iced latte with special touch</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- EXTRAS & SOFT DRINKS -->
+        <div class="menu-card reverse">
+          <div class="menu-image-col">
+            <span class="menu-img-tag">Extras &amp; Soft Drinks</span>
+            <img src="/extras.jpg" alt="Extras &amp; Soft Drinks at Dabus">
+          </div>
+          <div class="menu-content-col">
+            <h2 class="menu-section-title">Extras &amp; Soft Drink</h2>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Egg</span>
+                <span class="item-dots"></span>
+                <span class="item-price">50.00 Br</span>
+              </div>
+              <div class="item-description">Extra egg add-on</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Honey</span>
+                <span class="item-dots"></span>
+                <span class="item-price">50.00 Br</span>
+              </div>
+              <div class="item-description">Pure honey</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Cheese</span>
+                <span class="item-dots"></span>
+                <span class="item-price">100.00 Br</span>
+              </div>
+              <div class="item-description">Extra cheese</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Beef</span>
+                <span class="item-dots"></span>
+                <span class="item-price">100.00 Br</span>
+              </div>
+              <div class="item-description">Extra beef</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Chicken</span>
+                <span class="item-dots"></span>
+                <span class="item-price">200.00 Br</span>
+              </div>
+              <div class="item-description">Extra chicken</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Tuna</span>
+                <span class="item-dots"></span>
+                <span class="item-price">100.00 Br</span>
+              </div>
+              <div class="item-description">Extra tuna</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Coffee Takeaway</span>
+                <span class="item-dots"></span>
+                <span class="item-price">30.00 Br</span>
+              </div>
+              <div class="item-description">Takeaway coffee container</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Takeaway Box</span>
+                <span class="item-dots"></span>
+                <span class="item-price">50.00 Br</span>
+              </div>
+              <div class="item-description">Takeaway food box</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Pizza Takeaway Box</span>
+                <span class="item-dots"></span>
+                <span class="item-price">50.00 Br</span>
+              </div>
+              <div class="item-description">Takeaway pizza box</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Soft Drink</span>
+                <span class="item-dots"></span>
+                <span class="item-price">75.00 Br</span>
+              </div>
+              <div class="item-description">Various soft drink options</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Ambo Water</span>
+                <span class="item-dots"></span>
+                <span class="item-price">75.00 Br</span>
+              </div>
+              <div class="item-description">Refreshing sparkling water</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="item-name">Water 0.5 Liter</span>
+                <span class="item-dots"></span>
+                <span class="item-price">50.00 Br</span>
+              </div>
+              <div class="item-description">Bottled water</div>
             </div>
 
           </div>
@@ -1662,7 +2465,7 @@
               </div> -->
               <!-- Map for Bole, Addis Ababa -->
               <div class="map-embed" aria-hidden="false">
-                <iframe src="https://www.google.com/maps?q=Bole+Addis+Ababa+Ethiopia&output=embed" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1970.4283765757398!2d38.7474011!3d8.9853263!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8500288d134b%3A0x3bd065b7f878e6ae!2sDABUS%20COFFEE!5e0!3m2!1sen!2set!4v1787226433656!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
               </div>
 
             </div>
@@ -1678,10 +2481,10 @@
                 <div role="listitem" class="w-dyn-item">
                   <div class="work-wrapper">
                     <div data-w-id="6319eb54-4678-f1c2-df90-4c7184478370" class="image-wrap"><img loading="lazy"
-                        src="/restaurant.jpg" alt="" sizes="100vw"
-                        srcset="/restaurant.jpg 500w, /restaurant.jpg 800w, /restaurant.jpg 1080w, /restaurant.jpg 2000w"
+                        src="/DabusCoffeeSign.png" alt="" sizes="100vw"
+                        srcset="/DabusCoffeeSign.png 500w, /DabusCoffeeSign.png 800w, /DabusCoffeeSign.png 1080w, /DabusCoffeeSign.png 2000w"
                         class="paralax-image"></div>
-            
+
                     <div class="title-wrapper">
 
 
@@ -1810,14 +2613,14 @@
     </div>
 
     <!-- VAT Notice Section -->
-    <section class="menu-section" style="padding: 40px 0;">
+    <!-- <section class="menu-section" style="padding: 40px 0;">
       <div class="menu-container">
         <p
           style="text-align: center; font-size: 1.1rem; color: #0F3D2E; opacity: 0.85; font-style: italic; max-width: 800px; margin: 0 auto;">
           The above prices are inclusive of VAT and service charge.
         </p>
       </div>
-    </section>
+    </section> -->
 
 
     <style>
@@ -2121,7 +2924,7 @@
     </section>
 
     <!-- Footer -->
-   
+
 
   </div>
   <script>
